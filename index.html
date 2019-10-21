@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+	<form onsubmit="send(event)">
+		<input type="text" id="input" >
+	</form>
+	<h1></h1>
+
+	<script type="text/javascript">
+		let input = document.getElementById('input')
+		let text = document.querySelector('h1')
+		
+		function send(event) {
+			event.preventDefault()
+			console.log(input)
+			console.log(text)
+			// text.innerHTML = input.value
+			text.innerHTML = "ola, meu nome é " +input.value+" qual é o seu? "
+		}
+
+	</script>
+</body>
+</html>
